@@ -1,0 +1,45 @@
+.fa {
+    display: none;
+    animation-name: slideUp;
+    animation-duration: 0.35s;
+}
+
+
+@keyframes slideUp {
+    0% {opacity: 0; margin-top: 60px;}
+    100% {opacity: 1; margin-top: 0;}
+}
+
+@keyframes slideDown {
+    0% {opacity: 1; margin-top: 0;}
+    100% {opacity: 0; margin-top: 60px;}
+}
+
+.card {
+    width: 130px;
+    height: 130px;
+    font-size: 60px;
+    background-color: darkgray;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    border: none;
+}
+
+.main-con {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.nav {
+    margin-left: 4em;
+}

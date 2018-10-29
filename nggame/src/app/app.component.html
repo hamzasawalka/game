@@ -1,0 +1,12 @@
+
+  <h1 class="title">
+     {{ title }}
+  </h1>
+
+  <span class="left-nav">
+    <a [routerLink]="['cards']"><button class="btn btn-danger">Game</button></a>
+    <a [routerLink]="['scores']"><button class="btn btn-primary">Scores</button></a>
+    
+  </span>
+
+  <router-outlet></router-outlet>

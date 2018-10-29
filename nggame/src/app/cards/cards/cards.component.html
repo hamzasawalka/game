@@ -1,0 +1,16 @@
+<app-users (sendUser)='getUser($event)' ></app-users>
+<div class="main-con">
+    
+  <div class="row">
+    <div *ngFor="let card of cards" >
+      <div (click)="getClickedCard(card.id)" class="card" [style.background]="card.bg ">
+        <i [style.display]="card.display" class="{{card.class}}" ></i>
+      </div>
+    </div>
+  </div>
+
+  <div class='nav'>
+    <h3>Time: {{minutes | number: '2.0' }}:{{ seconds | number: '2.0'}}</h3>
+    <span></span>
+  </div>
+</div>

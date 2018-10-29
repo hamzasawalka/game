@@ -1,0 +1,10 @@
+<div class="scores">
+<ngb-accordion  [closeOthers]="true">
+    <ngb-panel *ngFor="let user of scores" title="{{user.name}}">   
+        <ng-template ngbPanelContent>
+        <p *ngFor="let score of user.scores">{{score}}</p>
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>
+</div>
+
